@@ -5,7 +5,7 @@
 // This notice must stay intact for use
 
 //Enter domain of site to search.
-var domainroot="www.upcawa.org"
+var domainroot="akin.com.ng/ngo"
 
 function Gsitesearch(curobj){
 curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
