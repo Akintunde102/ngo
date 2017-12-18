@@ -1,0 +1,33 @@
+
+<script type="text/javascript">
+$(document).ready(function() {
+	// Start our cycle
+	$('#main-photo').cycle({ 
+		fx:      'fade',
+		speed:    2000,
+		timeout:  6000,
+		autostop: 0
+	});
+	$('#interest-features').after('<div id="interest-links" class="controller">').cycle({ 
+		fx:      'fade',
+		speed:    3000,
+		timeout:  6000,
+		pause: 	1,
+		pager:  '#interest-links',
+		autostop: 0,
+		end:    function() {  
+        	$('#interest-features').cycle(0);  
+        	$('#interest-features').cycle('pause');
+		} 
+	});
+	// Pause the cycle
+	$('#pause-features').click(function() { 
+		$('#interest-features').cycle('pause');
+		return false;
+	});
+});
+function pauseFeatures () {
+	$('#interest-features').cycle('pause');
+	return false;
+}
+</script>

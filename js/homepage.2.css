@@ -1,0 +1,177 @@
+/*
+ Screen style    
+ Site: UVa
+ Page: Home Page
+*/
+
+/* Accessibility Navigation */
+#header .student-res { right: 61px; }
+#header .student-res li.home { display:none; }
+#header .student-res li.prefs { visibility:visible; }
+
+/* Main photo */
+#content { position:relative;}
+#content .main-photo { position: absolute; left:17px; width: 639px; height: 309px; float: left; margin-bottom: 6px; overflow:hidden; }
+#content .main-photo img { display: block; }
+#content #selected-photo { position: absolute; left:17px; width: 639px; height: 309px; margin-bottom: 6px;}
+#content #selected-photo img { display: block; }
+
+/* Home accordion
+#home-accordion { width: 309px; height: 309px; float: right; margin:0 16px 6px 0; background: url(../images/bg/home-accordion.gif) bottom no-repeat; overflow: hidden; } */
+#home-accordion { width: 309px; height: 309px; margin:0 16px 6px 660px; background: url(../images/bg/home-accordion.gif) bottom no-repeat; overflow: hidden; }
+#home-accordion .inner {
+	height: 260px;
+	overflow: hidden;
+	padding-top: 0;
+	padding-right: 2px;
+	padding-bottom: 0;
+	padding-left: 2px;
+}
+
+/* Home accordion - WIP */
+#home-accordion .wip h2 { height: 38px; }
+#home-accordion .wip h2 span { background-image:url(../images/text/wip.gif); cursor: pointer; }
+#home-accordion .wip .inner { background: url(../images/bg/wip.gif) no-repeat; position: relative; }
+#home-accordion .wip #slideshow {
+	position: absolute;
+	width: 305px;
+	height: 210px;
+	overflow: hidden;
+}
+#home-accordion .wip #slideshow img { display: block; position: absolute; left: 0;	top: 0; width: 305px; height: 188px; }
+#home-accordion .wip #slideshow .shadow { display: block; position: absolute; top: 0; left: 0; width: 305px; height: 14px; z-index: 99; background: url(../images/bg/wip-shadow.png) no-repeat; }
+#home-accordion .wip .inner .more { position:absolute; top:165px; height: 18px; width:296px; padding: 5px 0 0 9px; background: #C5D4D0; margin: 0; font-size: 0.82em; text-transform: uppercase; z-index:99; }
+#home-accordion .wip .inner a.go-to { float:left; text-decoration: none; color: #243995; padding-left: 8px; background: url(../images/bg/plus2.gif) left center no-repeat; }
+#home-accordion .wip .inner a.submit { float:right; text-decoration: none; color: #243995; background:url(../images/icons/accordion-photo.png) 0px -15px no-repeat; padding: 0px 15px 0px 17px;}
+#home-accordion .wip .inner a:hover.submit { background:url(../images/icons/accordion-photo.png) 0px 0px no-repeat;}
+
+/* Home accordion - Events */
+#home-accordion .events h2 { height: 40px; }
+#home-accordion .events h2 span { background-image: url(../images/text/events.gif); cursor: pointer; }
+#home-accordion .events .inner { background: url(../images/bg/events.gif) no-repeat; }
+#home-accordion .events .inner ul { margin: 23px 0 13px 10px; width: 282px; height: 129px; overflow: auto; }
+#home-accordion .events .inner li { padding-left: 8px; background: url(../images/bg/plus2.gif) 0 5px no-repeat; line-height: 1.27; margin-bottom: 3px; }
+#home-accordion .events .inner li.eventheader { padding-left: 0px; background: none; line-height: 1.27; margin-top: 10px; color: #0D2C7C; font-weight:bold;}
+#home-accordion .events .inner ul a { color: #454b49; text-decoration: none; }
+#home-accordion .events .inner ul a:hover { color: #000604; text-decoration: none; }
+#home-accordion .events .inner ul a strong { font-weight:normal; }
+#home-accordion .events .inner .more { height: 18px; padding: 5px 0 0 9px; background: #C5D4D0; margin: 0; font-size: 0.82em; text-transform: uppercase; }
+#home-accordion .events .inner a.go-to { float:left; text-decoration: none; color: #243995; padding-left: 8px; background: url(../images/bg/plus2.gif) left center no-repeat; }
+#home-accordion .events .inner a.submit { float:right; text-decoration: none; color: #243995; background:url(../images/icons/accordion-event.png) 0px -15px no-repeat; padding: 0px 15px 0px 17px;}
+#home-accordion .events .inner a:hover.submit { background:url(../images/icons/accordion-event.png) 0px 0px no-repeat;}
+#home-accordion .events .inner a.search { float:right; text-decoration: none; color: #243995; background:url(../images/icons/accordion-event.png) 0px -15px no-repeat; padding: 0px 15px 0px 17px;}
+#home-accordion .events .inner a:hover.search { background:url(../images/icons/accordion-event.png) 0px 0px no-repeat;}
+
+/* Home accordion - News */
+#home-accordion .news h2 { height: 40px; }
+#home-accordion .news h2 span { background-image: url(../images/text/news.gif); cursor: pointer; }
+#home-accordion .news .inner { background: url(../images/bg/news.gif) no-repeat; }
+#home-accordion .news .inner .content { margin: 21px 0 17px 15px; width: 279px; height: 127px; color: #343A38; overflow: hidden; }
+#home-accordion .news .inner .content h3 { font-size: 1em; line-height: 1.27; }
+#home-accordion .news .inner .content p { line-height: 1.27; margin: 0; }
+#home-accordion .news .inner img { float: right; margin-left: 8px; }
+#home-accordion .news .inner ul { margin: 23px 0 13px 10px; width: 282px; height: 129px; overflow: auto; }
+#home-accordion .news .inner li { padding-left: 8px; background: url(../images/bg/plus2.gif) 0 5px no-repeat; line-height: 1.27; margin-bottom: 3px; }
+#home-accordion .news .inner ul a { color: #121917; text-decoration: none; }
+#home-accordion .news .inner ul a:hover { color: #000604; text-decoration: none; }
+#home-accordion .news .inner ul a strong { font-weight:normal; }
+#home-accordion .news .inner .more { height: 18px; padding: 5px 0 0 9px; background: #C5D4D0 url(../images/bg/read-full-story.gif) no-repeat; font-size: 0.82em; text-transform: uppercase; width: 309px; margin: 0 -2px; }
+#home-accordion .news .inner a.go-to { float:left; text-decoration: none; color: #243995; padding-left: 8px; background: url(../images/bg/plus2.gif) left center no-repeat; }
+#home-accordion .news .inner a.submit { float:right; text-decoration: none; color: #243995; background:url(../images/icons/accordion-news.png) 0px -15px no-repeat; padding: 0px 15px 0px 17px;}
+#home-accordion .news .inner a:hover.submit { background:url(../images/icons/accordion-news.png) 0px 0px no-repeat;}
+#home-accordion .news .inner a.search { float:right; text-decoration: none; color: #243995; background:url(../images/icons/accordion-news.png) 0px -15px no-repeat; padding: 0px 25px 0px 17px;}
+#home-accordion .news .inner a:hover.search { background:url(../images/icons/accordion-news.png) 0px 0px no-repeat;}
+
+/* Expandable Home Boxes */
+.expandable-box .inner { overflow: hidden; }
+.expandable-box h2 { line-height: 1.1; margin-bottom: 6px; }
+.expandable-box a { text-decoration: none; color: #4a4a4a; }
+.expandable-box a:hover { color: #000; }
+.expandable-box .tab { clear: both; margin: 10px 0 0 0; height: 16px; }
+.expandable-box .tab a { display: block; width: 106px; height: 12px; text-align: center; }
+.expandable-box .tab a span { background-image: url(../images/bg/-toggle.gif); }
+.az-index .tab a span { background-image: url(../images/bg/box3-toggle.gif); }
+
+/* Featured Links */
+.featured-links { background: url(../images/bg/box2.gif) repeat-y; } 
+.featured-links .inner { background: url(../images/bg/box2-inner.gif) no-repeat; padding: 15px 26px 0 21px; height: 126px; }
+.featured-links .tab { background: url(../images/bg/box2-tab.gif) no-repeat; }
+.featured-links .tab a { margin-left: 90px; }
+.featured-links .tab a span { background-image: url(../images/bg/box-toggle.gif); }
+.featured-links h2 { margin-bottom: 8px; }
+.featured-links ul { float: left; width: 123px; }
+.featured-links ul.first { margin-right: 6px; }
+.featured-links li { padding-left: 7px; background: url(../images/bg/plus.gif) 0 3px no-repeat; line-height: 1.3; }
+.featured-links a { color: #4D4D4D; }
+
+/* Campaign Links */
+.campaign { background: url(../images/bg/box2.gif) repeat-y; margin: 5px 0 0 0; } 
+.campaign .inner { background: url(../images/bg/box2-inner.gif) no-repeat; padding: 12px 26px 0 21px; height: 48px; }
+.campaign .tab { background: url(../images/bg/box2-tab.gif) no-repeat; }
+.campaign .tab a { margin-left: 90px; }
+.campaign .tab a span { background-image: url(../images/bg/box-toggle.gif); }
+.campaign h2 { margin-bottom: 8px; }
+.campaign p { margin: 0; }
+.campaign img { margin: 0 0 0 18px; }
+.campaign ul { float: left; width: 232px; margin-top:0; }
+.campaign li { padding-left: 7px; background: url(../images/bg/plus.gif) 0 3px no-repeat; line-height: 1.1; }
+.campaign a { color: #4D4D4D; }
+
+/* UVA Today News / Events */
+.uva-today { background: url(../images/bg/box2.gif) repeat-y; } 
+.uva-today .inner { background: url(../images/bg/box2-inner.jpg) no-repeat; padding: 15px 15px 0 23px; height: 205px; }
+.uva-today .tab { background: url(../images/bg/box2-tab.gif) no-repeat; margin-top: 3px; }
+.uva-today .tab a { margin-left: 77px; }
+.uva-today h2 a { color: #0D2C7C; padding-right: 18px; background: url(../images/bg/arrow2.gif) 100% 70% no-repeat;  }
+.uva-today li { padding-left: 8px; background: url(../images/bg/arrow1.gif) 0 2px no-repeat; line-height: 1.1; margin-bottom: 7px; }
+.uva-today li.podcast { background-image: url(../images/bg/podcast.gif); margin-left: -2px; padding-left: 10px; }
+.uva-today ul { min-height:175px;}
+
+/* Feature Area */
+.interest {
+	background: url(../images/bg/box9.gif) repeat-y;
+	height:270px;
+	overflow:hidden;
+} 
+.interest .inner { background: url(../images/bg/box9-inner.gif) no-repeat !important; }
+.interest .tab { background: url(../images/bg/box9-tab.gif) no-repeat; margin-top: -5px; }
+.interest h2 { color:#bb2200; margin: 10px 15px 8px 23px;  }
+.interest h2 a { color:#bb2200; }
+.interest li.podcast { background-image: url(../images/bg/podcast.gif); margin-left: -2px; padding-left: 10px; }
+.interest p { margin:0 0 -3px 0; }
+.interest .feature { background:#cc3300; height:193px; width:304px; overflow:hidden; margin-left:1px;}
+.interest .feature .text {width:151px; float:left; padding-top:10px;}
+.interest .feature .text h3, .interest .feature .text p {margin:10px 10px 10px 20px; color:#FFF; line-height:13px;}
+.interest .feature .text p.more a {color:#ffeebb; font-size:9px; text-transform:uppercase; padding: 0 0 0 8px; background:url(../images/icons/feature-arrow.gif) no-repeat;}
+.interest .feature .text h3 {font-size:15px; font-weight:normal; line-height:17px;}
+.interest .feature .video {background:#000000; width:304px; float:left; padding-top:0px; text-align:center;}
+.interest .feature .youtube {background:#cc3300; width:304px; float:left; padding-top:4px; text-align:center;}
+.interest .feature .image {width:152px; margin-left:-1px; float:right; border-right:#c2c8c6 solid 1px;}
+.interest ul, #interest-links {margin:0; padding:2px 10px 0 10px;}
+.interest li, #interest-links a {margin:2px 3px 0 3px; float:left; display:inline; line-height: 1.1;}
+.interest li, .interest li a, #interest-links a {background:none; color:#cc3300; font-size:11px; padding:1px 3px;}
+.interest li a.on, .interest li a.selected, #interest-links a.activeSlide { background:#cc3300; color:#fff;}
+#interest-buttons {float:right;}
+#interest-links {float:left;}
+#interest-buttons a {color:#cc3300; margin:2px 0 0 0; padding:2px 10px 0 10px;}
+#interest-buttons, #interest-links {padding:2px 5px 0 5px; height:17px;}
+.feature-holder {background:transparent !important;}
+
+/* A-Z Website Index */
+.az-index { background: url(../images/bg/box3.gif) repeat-y; } 
+.az-index .inner { background: url(../images/bg/box3-inner.jpg) no-repeat; padding: 15px 20px 0 21px; height: 226px; }
+.az-index .tab { background: url(../images/bg/box3-tab.gif) no-repeat; margin-top: 3px; }
+.az-index .tab a { margin-left: 105px; }
+.az-index h2 a { color: #0D2C7C; }
+.az-index h2.search {float:left; margin:0; padding:0; width:90px;}
+.az-index p.type {float:left; margin-top:2px; width:175px;}
+.az-index form p { margin: 0 0 3px 0; }
+.az-index form input { margin: 0 4px 0 0; vertical-align: top; }
+.az-index input.text { background: url(../images/bg/input.gif) top; color: #6F6F6F; border: solid 1px #d6dddd; width: 250px; padding: 1px 6px; margin-right: 1px; }
+.az-index li { border-bottom: 1px solid #edf1f0; padding: 2px 0px; line-height: 1.2; }
+.az-index li.first { border-top: none; }
+
+#az-index-results { min-height: 120px;}
+
+/* Text Version */
+#audience-nav-alt {visibility:hidden; height:0 !important; margin:0 !important; padding:0 !important; position:absolute; left:-9999px; top:-9999px;}
