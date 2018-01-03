@@ -77,7 +77,7 @@ The other unmentioned files are self explanatory in their names and all codes ar
 ## Installation 
 Installation is very easy. Just follow the following steps
 
-1. Download this script as a zip file (from [here](https://github.com/Akintunde102/ngo/archive/master.zip)
+1. Download this script as a zip file (from [here](https://github.com/Akintunde102/ngo/archive/master.zip))
 2. Copy to your server  www (or htdocs) folder
 3. That's it 
 4. Just view from your server domain name (or from localhost if you are in a local environment)
